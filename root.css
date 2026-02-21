@@ -4,4 +4,24 @@
     --verde-escuro: #1F3D2B;
     --off-white: #FAF3E0;
     --marrom-escuro: #3B2A1A;
+    --font-anton: "Anton", sans-serif;
+    --font-weight: 400;
+    --font-bebas-neue: "Bebas Neue", sans-serif;
+    --font-style: normal;
 }
+
+
+/*
+para usar as fontes baixadas do Google Fonts, adicione o seguinte código no seu HTML:
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+Para usar a font Anton, adicione o seguinte código no seu HTML:
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+para usar a font Bebas Neue, adicione o seguinte código no seu HTML:
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+*/
