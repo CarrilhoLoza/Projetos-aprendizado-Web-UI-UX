@@ -235,6 +235,12 @@ header .navbar-brand img {
     box-shadow: 0 6px 18px rgba(212, 160, 23, 0.25);
 }
 
+.card-btn.added {
+    background-color: #bababa;
+    box-shadow: 0 4px 12px rgba(212, 160, 23, 0.3);
+}
+
+
 .card-btn:active {
     transform: translateY(0);
     box-shadow: none;
