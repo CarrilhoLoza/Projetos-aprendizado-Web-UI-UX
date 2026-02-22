@@ -1,13 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>
-        Hello World!!
-    </h1>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color:#3B2A1A;">
+            <div class="container">
+
+                <!-- Logo / Nome -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="img/logo.png" alt="Logo" width="100">
+                    <span class="fw-bold" style="color:#D4A017;">
+                        Burguer Kinze
+                    </span>
+                </a>
+
+                <!-- Botão mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="menuNavbar">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold" href="#">Combos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold" href="#">Lanches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold" href="#">Acompanhamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold" href="#">Bebidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold" href="#">Sobremesas</a>
+                        </li>
+                    </ul>
+
+                    <!-- Busca -->
+                    <form class="d-flex search-form">
+                        <input class="form-control search-input" type="search" placeholder="Buscar produtos...">
+                        <button class="btn search-btn" type="button">
+                            🔍
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SEÇÃO DE LANCHES -->
+    <section class="lanches-section">
+        <div class="container">
+            <h2 class="section-title">Nossos Lanches Especiais</h2>
+
+            <div class="lanches-grid">
+                <!-- Card 1 -->
+                <div class="lanche-card">
+                    <div class="card-image-container">
+                        <img src="img/x-salada.png" alt="X-Salada" class="card-image">
+                    </div>
+                    <h3 class="card-title">X-Salada <br> COMBO 1 </h3>
+                    <div class="card-footer">
+                        <button class="card-btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="lanche-card">
+                    <div class="card-image-container">
+                        <img src="img/x-frango.png" alt="X-Frango" class="card-image">
+                    </div>
+                    <h3 class="card-title">X-Frango COMBO 2</h3>
+                    <div class="card-footer">
+                        <button class="card-btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="lanche-card">
+                    <div class="card-image-container">
+                        <img src="img/x-burguer.png" alt="X-Burguer" class="card-image">
+                    </div>
+                    <h3 class="card-title">X-Burguer COMBO 3</h3>
+                    <div class="card-footer">
+                        <button class="card-btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="lanche-card">
+                    <div class="card-image-container">
+                        <img src="img/x-especial.png" alt="X-Especial" class="card-image">
+                    </div>
+                    <h3 class="card-title">X-Especial COMBO 4</h3>
+                    <div class="card-footer">
+                        <button class="card-btn">Adicionar</button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="lanche-card">
+                    <div class="card-image-container">
+                        <img src="img/x-bacon.png" alt="X-Bacon" class="card-image">
+                    </div>
+                    <h3 class="card-title">X-Bacon <br> COMBO 5</h3>
+                    <div class="card-footer">
+                        <button class="card-btn">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
