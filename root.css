@@ -1,4 +1,10 @@
+
+/* ================= VARIÁVEIS GLOBAIS DO PROJETO ================= */
+/* Define cores e fontes reutilizáveis em todo o site */
+
 :root{
+
+    /* Paleta de cores da marca */
     --vermelho-retro: #B23A2E;
     --mostarda: #D4A017;
     --verde-escuro: #1F3D2B;
@@ -6,6 +12,9 @@
     --marrom-escuro: #3B2A1A;
     --font-anton: "Anton", sans-serif;
     --font-weight: 400;
+
+    /* Fontes principais do projeto */
+    
     --font-bebas-neue: "Bebas Neue", sans-serif;
     --font-style: normal;
 }

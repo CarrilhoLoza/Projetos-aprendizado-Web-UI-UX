@@ -3,21 +3,28 @@
 
 <head>
     <meta charset="utf-8">
+    <!-- Permite responsividade em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Main</title>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS personalizados -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="promotion.css">
 
 </head>
 
 <body>
-    <!-- HEADER -->
+    
+    <!-- ================= HEADER / MENU ================= -->
     <header>
         <nav class="navbar navbar-expand-lg" style="background-color:#3B2A1A;">
             <div class="container">
-                <!-- Logo / Nome -->
+                <!-- Logo + Nome da lanchonete -->
                 <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                     <img src="img/logo.png" alt="Logo" width="100">
                     <span class="fw-bold" style="color:#D4A017;">
@@ -25,12 +32,12 @@
                     </span>
                 </a>
 
-                <!-- Botão mobile -->
+                <!-- Botão de menu mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Menu -->
+                <!-- Links do menu -->
                 <div class="collapse navbar-collapse" id="menuNavbar">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
                         <li class="nav-item">
@@ -50,7 +57,7 @@
                         </li>
                     </ul>
 
-                    <!-- Busca -->
+                    <!-- Campo de busca -->
                     <form class="d-flex search-form">
                         <input class="form-control search-input" type="search" placeholder="Buscar produtos...">
                         <button class="btn search-btn" type="button">
@@ -66,8 +73,12 @@
      
     <section class="combos">
         <h2 class="section-title promotions-title">Promoções</h2>
-            <!--Promotion 1 -->
         <div class="promotions-container">
+
+            <!-- Card de promoção -->
+
+            <!--Promotion 1 -->
+
             <div class="promotion_card">
                 <div class="card-image-container">
                     <img class="card-image" src="./img/promotion1.jpg" alt="">
@@ -148,13 +159,14 @@
         </div>
     </section>
 
-    <!-- SEÇÃO DE LANCHES -->
+    <!-- ================= SEÇÃO LANCHES ================= -->
 
     <section class="lanches-section">
         <div class="container">
             <h2 class="section-title">Nossos Lanches Especiais</h2>
 
             <div class="lanches-grid">
+
                 <!-- Card 1 -->
                 <div class="lanche-card">
                     <div class="card-image-container">
@@ -213,9 +225,14 @@
         </div>
     </section>
 
+    <!-- ================= SCRIPTS ================= -->
+
+    <!-- Bootstrap JS para componentes interativos -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    
+    <!-- Scripts do projeto -->
     <script src="script_promotions.js"></script>
     <script src="main.js"></script>
     
