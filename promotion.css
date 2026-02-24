@@ -1,16 +1,20 @@
+/* Importa variáveis globais e estilos base */
 @import url("./root.css");
 @import url("./style.css");
+
+/* Container das promoções */
 .promotions-container {
-  display: flex;
+  display: flex;        /* Layout horizontal */
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 20px;            /* Espaço entre cards */
   padding: 20px;
   height: auto;
   overflow: visible;
-  position: relative;
+  position: relative;   /* Permite posicionamento absoluto dos filhos */
 }
 
+/* Card de promoção */
 .promotion_card {
   display: flex;
   flex-direction: column;
@@ -23,9 +27,13 @@
   overflow: hidden;
   cursor: pointer;
   text-align: center;
+
+  /* Estado inicial invisível para animação */
   opacity: 0;
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
+
+  /* Fora do fluxo para permitir animação */
   position: absolute;
   left: 81%;
   margin-left: -150px;
@@ -36,18 +44,20 @@
   flex-wrap: wrap;
 } 
   
-.promotion_card h3 {
+.promotion_card h2 {
   margin: 2px;
   font-size: 19px;
 
   padding: 0 auto;
 }
 
+/* Preço */
 .promotion_card p {
   margin: 5px;
   font-size: 15px;
 }
 
+/* Estado ativo → card aparece */
 .promotion_card.active {
   opacity: 1;
   transform: translateX(0);
@@ -56,6 +66,7 @@
   margin-left: 0;
 }
 
+/* Estado de saída → card some para esquerda */
 .promotion_card.exit {
   opacity: 0;
   transform: translateX(-5000%);
@@ -67,6 +78,7 @@ h1{
   font-style: normal;   
 }
 
+/* Título da seção */
 .promotions-title{
   margin-top: 45px;
 }

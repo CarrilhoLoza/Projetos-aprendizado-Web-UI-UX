@@ -1,11 +1,14 @@
+/* Importa variáveis globais (cores e fontes) */
 @import "root.css";
 
-/* ===== NAVBAR ===== */
+/* ================= ESTILO GLOBAL ================= */
 
 body {
     background: var(--off-white);
     font-family: var(--font-bebas-neue);
 }
+
+/* ================= NAVBAR ================= */
 
 /* Nav: sombra sutil e altura */
 header .navbar {
@@ -16,6 +19,7 @@ header .navbar {
     transition: box-shadow 0.3s ease;
 }
 
+/* Aumenta sombra ao passar o mouse */
 header .navbar:hover {
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
 }
@@ -52,6 +56,7 @@ header .navbar-brand img {
     transition: color 0.25s ease, transform 0.2s ease;
 }
 
+/* Links mudam de cor no hover */
 .navbar .nav-link:hover {
     color: var(--mostarda);
 }
@@ -97,7 +102,7 @@ header .navbar-brand img {
     color: var(--off-white);
 }
 
-/* Botão de busca */
+/* Botão de busca com gradiente */
 .navbar .search-btn {
     background: linear-gradient(135deg, var(--mostarda) 0%, #c8911a 100%);
     color: var(--marrom-escuro);
@@ -135,13 +140,14 @@ header .navbar-brand img {
     box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.4);
 }
 
-/* ===== SEÇÃO DE LANCHES ===== */
+/* ================= SEÇÃO LANCHES ================= */
 
 .lanches-section {
     padding: 60px 0;
     background: linear-gradient(135deg, var(--off-white) 0%, #f5ebe3 100%);
 }
 
+/* Título da seção */
 .section-title {
     text-align: center;
     font-family: var(--font-anton);
@@ -171,6 +177,7 @@ header .navbar-brand img {
     cursor: pointer;
 }
 
+/* Card levanta ao passar o mouse */
 .lanche-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 25px rgba(212, 160, 23, 0.3);
@@ -192,6 +199,7 @@ header .navbar-brand img {
     transition: transform 0.3s ease;
 }
 
+/* Zoom da imagem no hover */
 .lanche-card:hover .card-image {
     transform: scale(1.1);
 }
@@ -216,6 +224,7 @@ header .navbar-brand img {
 
 }
 
+/* Botão do card */
 .card-btn {
     background: var(--verde-escuro);
     color: var(--off-white);
@@ -232,6 +241,7 @@ header .navbar-brand img {
     box-shadow: 0 6px 18px rgba(212, 160, 23, 0.25);
 }
 
+/* Estado quando produto foi adicionado (controlado pelo JS) */
 .card-btn.added {
     background-color: #bababa;
     box-shadow: 0 4px 12px rgba(212, 160, 23, 0.3);
@@ -243,7 +253,8 @@ header .navbar-brand img {
     box-shadow: none;
 }
 
-/* Responsivo para telas pequenas */
+/* ================= RESPONSIVIDADE ================= */
+
 @media (max-width: 768px) {
     .lanches-grid {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
