@@ -69,158 +69,246 @@
         </nav>
     </header>
     
-    <!-- Carrosel de Promoções-->
-     
-    <section class="combos">
-        <h2 class="section-title promotions-title">Promoções</h2>
-        <div class="promotions-container">
+    <!-- ================= PROMOÇÕES BOOTSTRAP ================= -->
 
-            <!-- Card de promoção -->
+<section class="py-5">
+    <div class="container">
 
-            <!--Promotion 1 -->
+        <h2 class="text-center mb-5">Promoções</h2>
 
-            <div class="promotion_card">
-                <div class="card-image-container">
-                    <img class="card-image" src="./img/promotion1.jpg" alt="">
+        <div id="carouselPromocoes"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"> <!--4 segundos de  intervalo-->
+
+            <div class="carousel-inner">
+
+                <!-- SLIDE 1 -->
+                <div class="carousel-item active">
+                    <div class="row g-4 justify-content-center">
+
+                        <!-- Card 1 -->
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center shadow-sm border-0 h-100">
+                                <img src="./img/promotion1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">3 x-tudo + 1 x-bacon</h6>
+                                    <p class="fw-bold text-success">R$94,99</p>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <button class="btn w-100"
+                                            style="background-color:#D4A017; color:#3B2A1A; font-weight:600;">
+                                        Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center shadow-sm border-0 h-100">
+                                <img src="./img/promotion2.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">X-Tudo</h6>
+                                    <p class="fw-bold text-success">R$31,90</p>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <button class="btn w-100"
+                                            style="background-color:#D4A017; color:#3B2A1A; font-weight:600;">
+                                        Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center shadow-sm border-0 h-100">
+                                <img src="./img/promotion3.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">
+                                        Combo de Frango + fritas + refrigerante
+                                    </h6>
+                                    <p class="fw-bold text-success">R$27,90</p>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <button class="btn w-100"
+                                            style="background-color:#D4A017; color:#3B2A1A; font-weight:600;">
+                                        Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
-                <h3>3 x-tudo <br>+<br> 1 x-bacon</h3>
-                <p>R$94,99</p>
-                <div class="card-footer">
-                    <button class="card-btn">Adicionar</button>
+                <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                    <div class="row g-4 justify-content-center">
+
+                        <!-- Card 4 -->
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center shadow-sm border-0 h-100">
+                                <img src="./img/promotion4.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">Combo Casal</h6>
+                                    <p class="fw-bold text-success">R$50,00</p>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <button class="btn w-100"
+                                            style="background-color:#D4A017; color:#3B2A1A; font-weight:600;">
+                                        Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center shadow-sm border-0 h-100">
+                                <img src="./img/promotion5.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">2 Sanduíches</h6>
+                                    <p class="fw-bold text-success">R$14,90</p>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <button class="btn w-100"
+                                            style="background-color:#D4A017; color:#3B2A1A; font-weight:600;">
+                                        Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card text-center shadow-sm border-0 h-100">
+                                <img src="./img/promotion6.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">3 X-Bacon + 3 Guaraná</h6>
+                                    <p class="fw-bold text-success">R$22,90</p>
+                                </div>
+                                <div class="card-footer bg-white border-0">
+                                    <button class="btn w-100"
+                                            style="background-color:#D4A017; color:#3B2A1A; font-weight:600;">
+                                        Adicionar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
 
-            <!--Promotion 2 -->
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselPromocoes" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
 
-            <div class="promotion_card">
-                <div class="card-image-container">
-                    <img class="card-image" src="./img/promotion2.jpg" alt="">
-                </div>
-                <h3>X-tudo</h3>
-                <p>R$31,90</p>
-                <div class="card-footer">
-                    <button class="card-btn">Adicionar</button>
-                </div>
-            </div>
-
-            <!--Promotion 3 -->
-
-            <div class="promotion_card">
-                <div class="card-image-container">
-                    <img class="card-image" src="./img/promotion3.jpg" alt="">
-                </div>
-                <h3 class="card-title">Combo de Frango <br>+ <br>fritas <br>+ <br>refrigerante</h3>
-                <p>R$27,90</p>
-                <div class="card-footer">
-                    <button class="card-btn">Adicionar</button>
-                </div>
-            </div>
-
-            <!--Promotion 4 -->
-
-            <div class="promotion_card">
-                <div class="card-image-container">
-                    <img class="card-image" src="./img/promotion4.jpg" alt="">
-                </div>
-                <h3>Combo Casal</h3>
-                <p>R$50,00</p>
-                <div class="card-footer">
-                    <button class="card-btn">Adicionar</button>
-                </div>
-            </div>
-
-            <!--Promotion 5 -->
-
-            <div class="promotion_card">
-                <div class="card-image-container">
-                    <img class="card-image" src="./img/promotion5.jpg" alt="">
-                </div>
-                <h3>2 sanduíches</h3>
-                <p>R$14,90</p>
-                <div class="card-footer">
-                    <button class="card-btn">Adicionar</button>
-                </div>
-            </div>
-
-            <!--Promotion 6 -->
-
-            <div class="promotion_card">
-                <div class="card-image-container">
-                    <img class="card-image" src="./img/promotion6.jpg" alt="">
-                </div>
-                <h3>3 X-Bacon <br> + <br> 3 Guaraná natural</h3>
-                <p>22,90</p>
-                <div class="card-footer">
-                    <button class="card-btn">Adicionar</button>
-                </div>
-            </div>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselPromocoes" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
 
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- ================= SEÇÃO LANCHES ================= -->
 
-    <section class="lanches-section">
+    <section class="lanches-section py-5">
         <div class="container">
-            <h2 class="section-title">Nossos Lanches Especiais</h2>
+            <h2 class="text-center mb-4">
+                Nossos Lanches Especiais
+            </h2>
 
-            <div class="lanches-grid">
+            <div class="row flex-nowrap overflow-auto g-4 justify-content-start">
 
                 <!-- Card 1 -->
-                <div class="lanche-card">
-                    <div class="card-image-container">
-                        <img src="img/x-salada.png" alt="X-Salada" class="card-image">
-                    </div>
-                    <h3 class="card-title">X-Salada <br> COMBO 1 </h3>
-                    <div class="card-footer">
-                        <button class="card-btn">Adicionar</button>
+                <div class="col-auto">
+                    <div class="card text-center shadow-sm border-0" style="width: 220px;">
+                        <img src="img/x-salada.png" class="card-img-top p-3 img-fluid" alt="X-Salada">
+                        <div class="card-body">
+                            <h6 class="fw-bold">X-Salada <br> COMBO 1</h6>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn w-100"
+                                    style="background-color:#D4A017; color:#3B2A1A; font-weight:600;">
+                                Adicionar
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="lanche-card">
-                    <div class="card-image-container">
-                        <img src="img/x-frango.png" alt="X-Frango" class="card-image">
-                    </div>
-                    <h3 class="card-title">X-Frango COMBO 2</h3>
-                    <div class="card-footer">
-                        <button class="card-btn">Adicionar</button>
+                <div class="col-auto">
+                    <div class="card text-center shadow-sm border-0" style="width: 220px;">
+                        <img src="img/x-frango.png" class="card-img-top p-3 img-fluid" alt="X-Frango">
+                        <div class="card-body">
+                            <h6 class="fw-bold">X-Frango <br> COMBO 2</h6>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn w-100"
+                                    style="background-color:#D4A017; color:#3B2A1A; font-weight:600;">
+                                Adicionar
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="lanche-card">
-                    <div class="card-image-container">
-                        <img src="img/x-burguer.png" alt="X-Burguer" class="card-image">
-                    </div>
-                    <h3 class="card-title">X-Burguer COMBO 3</h3>
-                    <div class="card-footer">
-                        <button class="card-btn">Adicionar</button>
+                <div class="col-auto">
+                    <div class="card text-center shadow-sm border-0" style="width: 220px;">
+                        <img src="img/x-burguer.png" class="card-img-top p-3 img-fluid" alt="X-Burguer">
+                        <div class="card-body">
+                            <h6 class="fw-bold">X-Burguer <br> COMBO 3</h6>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn w-100"
+                                    style="background-color:#D4A017; color:#3B2A1A; font-weight:600;">
+                                Adicionar
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="lanche-card">
-                    <div class="card-image-container">
-                        <img src="img/x-especial.png" alt="X-Especial" class="card-image">
-                    </div>
-                    <h3 class="card-title">X-Especial COMBO 4</h3>
-                    <div class="card-footer">
-                        <button class="card-btn">Adicionar</button>
+                <div class="col-auto">
+                    <div class="card text-center shadow-sm border-0" style="width: 220px;">
+                        <img src="img/x-especial.png" class="card-img-top p-3 img-fluid" alt="X-Especial">
+                        <div class="card-body">
+                            <h6 class="fw-bold">X-Especial <br> COMBO 4</h6>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn w-100"
+                                    style="background-color:#D4A017; color:#3B2A1A; font-weight:600;">
+                                Adicionar
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="lanche-card">
-                    <div class="card-image-container">
-                        <img src="img/x-bacon.png" alt="X-Bacon" class="card-image">
-                    </div>
-                    <h3 class="card-title">X-Bacon <br> COMBO 5</h3>
-                    <div class="card-footer">
-                        <button class="card-btn">Adicionar</button>
+                <div class="col-auto">
+                    <div class="card text-center shadow-sm border-0" style="width: 220px;">
+                        <img src="img/x-bacon.png" class="card-img-top p-3 img-fluid" alt="X-Bacon">
+                        <div class="card-body">
+                            <h6 class="fw-bold">X-Bacon <br> COMBO 5</h6>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn w-100"
+                                    style="background-color:#D4A017; color:#3B2A1A; font-weight:600;">
+                                Adicionar
+                            </button>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
