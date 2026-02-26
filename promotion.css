@@ -23,9 +23,8 @@
   border-radius: 8px;
   width: auto;
   height: auto;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   cursor: pointer;
   text-align: center;
 
@@ -38,16 +37,15 @@
   position: absolute;
   left: 81%;
   margin-left: -150px;
-  font-family: "Anton", sans-serif;
+  font-family: var(--font-anton);
   font-weight: 400; 
   font-style: normal;
   background-color: var(--mostarda);
-  font-family: var(--font-anton);
   flex-wrap: wrap;
 } 
 
 /* Título do card */
-.promotion_card h2 {
+.promotion_card h3 {
   margin: 2px;
   font-size: 19px;
 
